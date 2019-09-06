@@ -1,12 +1,17 @@
 #include <Arduino.h>
-#include <string>
 #include <MyClass.h>
 
 using namespace std;
 
     int number;
     string message = "standard message....";  
-    void MyClass::hello() const
+
+    MyClass::MyClass()
+    {
+        hello();
+    } 
+
+    void MyClass::hello() 
     {
         Serial.println("Hello World... Are you happy now?");
     }
