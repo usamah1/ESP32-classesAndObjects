@@ -5,6 +5,8 @@
 MyClass firstObject;
 MyClass secondObject;
 
+std::string bar = "give me something";
+
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
@@ -20,6 +22,10 @@ void loop() {
   
   firstObject.printMessage();
   secondObject.printMessage();
+
+  Serial.println(firstObject.returningMethod().c_str());
+
+  Serial.println(bar.c_str());
 
   //firstObject.hello();
   delay(1000);

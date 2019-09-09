@@ -5,9 +5,12 @@ class MyClass
 {
     public:
         int number;
-        string message; 
+        string message;
         MyClass(); 
         void hello();
         void hello(string world) const;
         void printMessage() const;
+        std::string returningMethod();
+    private:
+        
 };

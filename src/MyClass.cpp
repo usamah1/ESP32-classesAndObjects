@@ -3,7 +3,7 @@
 
 using namespace std;
 
-    int number;
+    int number = 2;
     string message = "standard message....";  
 
     MyClass::MyClass()
@@ -24,3 +24,12 @@ using namespace std;
     {
         Serial.printf("%s \n", message.c_str());
     }   
+
+    std::string MyClass::returningMethod()
+    {
+        std::string foo = "HELLO ";
+        std::string bar = "WORLD";
+        std::string foobar = foo.append(bar);
+        
+        return foobar;
+    }
