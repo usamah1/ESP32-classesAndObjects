@@ -1,4 +1,9 @@
+
+#ifndef MYCLASS_H_
+
+#define MYCLASS_H_
 #include <string>
+
 using namespace std;
 
 class MyClass
@@ -14,3 +19,6 @@ class MyClass
     private:
         
 };
+
+
+#endif /* MYCLASS_H_ */
