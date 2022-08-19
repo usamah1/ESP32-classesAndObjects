@@ -1,6 +1,5 @@
-#include <Arduino.h>
-#include <MyClass.h>
-
+#include "MyClass.h"
+#include <iostream>
 using namespace std;
 
     int number = 2;
@@ -13,16 +12,16 @@ using namespace std;
 
     void MyClass::hello() 
     {
-        Serial.println("Hello World... Are you happy now?");
+       cout<<("Hello World... Are you happy now?")<<endl;
     }
     void MyClass::hello(string world) const
     {
-        Serial.printf("Hello %s \n", world.c_str());
+        cout<<("Hello %s \n", world.c_str())<<endl;
     
     }    
     void MyClass::printMessage() const
     {
-        Serial.printf("%s \n", message.c_str());
+        cout<<("%s \n", message.c_str())<<endl;
     }   
 
     std::string MyClass::returningMethod()
