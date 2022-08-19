@@ -1,5 +1,5 @@
-#include <Arduino.h>
-#include <MyClass.h>
+#include "MyClass.h"
+#include <iostream>
 
 
 MyClass firstObject;
@@ -9,7 +9,7 @@ std::string bar = "give me something";
 
 void setup() {
   // put your setup code here, to run once:
-  Serial.begin(9600);
+  
   firstObject.message = "hello world";
   secondObject.message = "hello universe";
 
@@ -23,11 +23,11 @@ void loop() {
   firstObject.printMessage();
   secondObject.printMessage();
 
-  Serial.println(firstObject.returningMethod().c_str());
+  cout<<(firstObject.returningMethod().c_str());
 
-  Serial.println(bar.c_str());
+  cout<<(bar.c_str());
 
   //firstObject.hello();
-  delay(1000);
+  
   // put your main code here, to run repeatedly:
 }
